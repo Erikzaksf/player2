@@ -1,11 +1,13 @@
-<div class="panel">
 
-
-<h2><%= link_to "Home", games_path %></h2>
+<div class="container">
+  <div class="panel panel-default">
+    <h2><%= link_to "Home", games_path %></h2>
+    <h2><%= @game.name %></h2>
+    <br>
+    <h3>About:  <%= @game.name %></h3>
+    <br>
+    <h4><%= @game.about %></h4>
+    <br>
+    <h4>$<%= @game.price %></h4>
+  </div>
 </div>
-<h2><%= @game.name %></h2>
-<br>
-<h3>About<%= @game.name %></h3>
-<p><%= @game.about %></p>
-<br>
-<h4>$<%= @game.price %></h4>
